@@ -1,7 +1,30 @@
 .hero {
-    background-color: red;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    &__description {
+        &--link {
+            text-decoration: none;
+            font-weight: 700;
+            color: rgba(77, 168, 255, 1);
+        }
+    }
+    &__heading {
+        font-size: 26px;
+        color: rgba(35, 67, 97, 1);
+        text-align: center;
+        margin: 0 auto 16px;
+        font-weight: 700;
+        line-height: 32px;
+        &--special {
+            color: rgba(16, 112, 202, 1);
+        }
+    }
     &__image {
+        margin: 66px auto 24px;
         height: 96px;
         width: 96px;
+        border: 16px solid rgba(246, 249, 253, 1);
+        border-radius: 50%;
     }
 }
