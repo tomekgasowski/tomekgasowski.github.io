@@ -31,7 +31,6 @@
     list-style: none;
     text-align: left;
     padding-inline-start: 0px;
-    padding-left: 24px;
     width: 100%;
     margin-bottom: 60px;
     &__element {
@@ -40,6 +39,30 @@
         font-weight: 600;
         line-height: 24px;
         margin-bottom: 12px;
-        
+        &--work::before {
+            display: inline-block;
+            content: '';
+            background-image: url('/src/assets/img/small-tick-green.svg');
+            height: 10px;
+            width: 12px;
+            margin-right: 12px;
+        }
+        &--know::before {
+            display: inline-block;
+            content: '';
+            background-image: url('/src/assets/img/small-tick-blue.svg');
+            height: 10px;
+            width: 12px;
+            margin-right: 12px;
+        }
+        &--learn::before {
+            display: inline-block;
+            content: '';
+            background-image: url('/src/assets/img/dot.svg');
+            margin: 3.5px 17px 3.5px 5px;
+            height: 3px;
+            width: 2px;
+            margin-right: 12px;
+        }
     }
 }
