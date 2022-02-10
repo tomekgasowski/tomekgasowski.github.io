@@ -1,7 +1,6 @@
 @import "~normalize.css";
 
-@import "_variables";
-@import "modules/hello.scss";
+@import "src\scss\modules\hero.scss";
 
 body {
   background: $wtf;
