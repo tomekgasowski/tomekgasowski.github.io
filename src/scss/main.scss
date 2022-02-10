@@ -1,12 +1,12 @@
 @import "~normalize.css";
 
 @import "modules/hero.scss";
+@import "modules/skills.scss";
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&display=swap');
 
 .main {
-  background: #FFF;
   color: rgba(66, 90, 112, 1);
-  padding: 16px;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -16,6 +16,13 @@
   font-size: 16px;
   line-height: 32px;
   text-align: center;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 48px;
 }
 
 .mail-link {
