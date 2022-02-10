@@ -3,13 +3,9 @@
 @import "modules/hero.scss";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&display=swap');
 
-body {
+.main {
   background: #FFF;
   color: rgba(66, 90, 112, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
   padding: 16px;
   font-family: 'Nunito', sans-serif;
 }
@@ -28,9 +24,8 @@ body {
   text-align: center;
   text-decoration: none;
   color: #FFF;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 40px;
-  padding: 8px auto;
+  padding: 4px 24px;
   font-weight: 600;
-  display: block;
 }
