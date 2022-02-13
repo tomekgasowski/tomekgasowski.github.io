@@ -1,8 +1,14 @@
 .my-projects {
     padding: 16px;
+    padding-bottom: 88px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    &__grid {
+        display: grid;
+        column-gap: 24px;
+        row-gap: 24px;
+    }
     &__heading {
         margin: 48px auto 32px;
     }
@@ -10,17 +16,20 @@
         margin: 0 auto 48px;
     }
 }
+
 .left-column {
     margin: 0;
     justify-self: end;
-    margin: 0 4px 8px 4px;
+    margin: 0 4px 6px 4px;
     color: #808082;
     letter-spacing: 1px;
     
 }
+
 .right-column {
     margin: 0;
     color: #808082;
+    letter-spacing: 0.5px;
 
 }
 
@@ -28,10 +37,10 @@
     font-family: 'Roboto', sans-serif;
     background-color: #212528;
     border-radius: 0 0 16px 16px;
-    padding: 24px 16px;
-    font-weight: 300;
+    padding: 24px 16px 40px;
+    font-weight: 400;
     line-height: 24px;
-    
+    font-size: 13px;
     &__description {
         margin-bottom: 24px;
         color: #A3A3A3;
@@ -54,16 +63,14 @@
         color: #14B5D0;
     }
     &__name {
-        font-weight: 500;
+        font-weight: 700;
         color: #FFF;
     }
-
     &__grid {
         display: grid;
         grid-template-columns: auto auto;
         margin: 0;
     }
-
     &__top-border {
         box-sizing: border-box;
         height: 40px;
@@ -74,8 +81,6 @@
         align-items: center;
         padding-left: 8px;
     }
-
-
 }
 
 
