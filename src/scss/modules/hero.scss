@@ -1,33 +1,64 @@
 .hero {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    &__description {
-        margin-bottom: 48px;
-        &--link {
-            text-decoration: none;
-            font-weight: 700;
-            color: rgba(77, 168, 255, 1);
-        }
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  &__description {
+    margin-bottom: 48px;
+    &--link {
+      text-decoration: none;
+      font-weight: 700;
+      color: rgba(77, 168, 255, 1);
+      @media screen and (min-width: 1024px) {
+        text-decoration: underline;
+      }
     }
-    &__heading {
-        font-size: 26px;
-        color: rgba(35, 67, 97, 1);
-        text-align: center;
-        margin: 0 auto 16px;
-        font-weight: 700;
-        line-height: 32px;
-        &--special {
-            color: rgba(16, 112, 202, 1);
-        }
+  }
+  &__heading {
+    font-size: 26px;
+    color: rgba(35, 67, 97, 1);
+    text-align: center;
+    margin: 0 auto 16px;
+    font-weight: 700;
+    line-height: 32px;
+    &--special {
+      color: rgba(16, 112, 202, 1);
     }
-    &__image {
-        margin: 66px auto 24px;
-        height: 96px;
-        width: 96px;
-        border: 16px solid rgba(246, 249, 253, 1);
-        border-radius: 50%;
+    @media screen and (min-width: 1024px) {
+      font-size: 32px;
+      line-height: 40px;
     }
+  }
+  &__image {
+    margin: 66px auto 24px;
+    height: 96px;
+    width: 96px;
+    border: 16px solid rgba(246, 249, 253, 1);
+    border-radius: 50%;
+    @media screen and (min-width: 1024px) {
+      height: 178px;
+      width: 178px;
+      border: 24px solid rgba(246, 249, 253, 1);
+      margin-bottom: 48px;
+    }
+  }
+  &__info {
+    position: relative;
+    @media screen and (min-width: 1024px) {
+      max-width: 810px;
+      &::before {
+        content: url(/src/assets/img/{.svg);
+        position: absolute;
+        top: -26px;
+        left: -84px;
+      }
+      &::after {
+        content: url(/src/assets/img/}.svg);
+        position: absolute;
+        top: -26px;
+        right: -84px;
+      }
+    }
+  }
 }
