@@ -6,12 +6,28 @@
         color: #FFF;
         margin: 48px auto 64px;
     }
+    @media screen and (min-width: 1024px) {
+        min-height: 100vh;   
+    }
 }
 
 .skills-list {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 288px;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 1024px) {
+            max-width: 1000px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+    }
     &__emoji {
         font-size: 64px;
         margin-bottom: 16px;
@@ -23,6 +39,9 @@
         line-height: 44px;
         margin: 0;
         margin-bottom: 24px;
+    }
+    @media screen and (min-width: 1024px) {
+        max-width: 380px;
     }
 }
 
@@ -64,5 +83,8 @@
             width: 2px;
             margin-right: 12px;
         }
+    }
+    @media screen and (min-width: 1024px) {
+        max-width: 225px;
     }
 }
