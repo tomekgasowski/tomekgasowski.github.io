@@ -76,6 +76,9 @@
     }
     &__icon {
         margin-bottom: 24px;
+        &--fake {
+            display: none;
+        }
     }
     &__link {
         color: #14B5D0;
