@@ -55,3 +55,6 @@ fetch('https://api.github.com/users/tomekgasowski/repos')
         }
     }
 })
+.catch(error => {
+    console.log("error");
+})
