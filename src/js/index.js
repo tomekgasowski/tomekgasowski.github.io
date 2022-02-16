@@ -24,7 +24,7 @@ fetch('https://api.github.com/users/tomekgasowski/repos')
 
             <article class="project">
               <img
-                src="/img/github.svg"
+                src="../assets/img/github.svg"
                 alt="github icon"
                 class="project__icon"
               />
