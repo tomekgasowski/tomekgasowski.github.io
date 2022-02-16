@@ -48,13 +48,13 @@
     @media screen and (min-width: 1024px) {
       max-width: 810px;
       &::before {
-        content: url(/src/assets/img/{.svg);
+        content: url(../assets/img/{.svg);
         position: absolute;
         top: -26px;
         left: -84px;
       }
       &::after {
-        content: url(/src/assets/img/}.svg);
+        content: url(../assets/img/}.svg);
         position: absolute;
         top: -26px;
         right: -84px;
