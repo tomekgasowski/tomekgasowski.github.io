@@ -11,6 +11,9 @@
       text-decoration: none;
       font-weight: 700;
       color: rgba(77, 168, 255, 1);
+      &:hover {
+        color: rgb(37, 126, 209);
+      }
       @media screen and (min-width: 1024px) {
         text-decoration: underline;
       }

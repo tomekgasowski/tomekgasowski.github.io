@@ -41,11 +41,28 @@
     &__link {
         width: 48px;
         height: 48px;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         border-radius: 50%;
         display: flex;
         align-items:center;
         justify-content: center;
+        box-shadow:
+        1px 1.8px 2.2px rgba(0, 0, 0, 0.011),
+        2px 2.7px 5.3px rgba(0, 0, 0, 0.015),
+        4px 4.5px 10px rgba(0, 0, 0, 0.023),
+        7px 7.3px 17.9px rgba(0, 0, 0, 0.032),
+        11px 11.8px 33.4px rgba(0, 0, 0, 0.047);
+        // 20px 20px 80px rgba(0, 0, 0, 0.6);;
+        &:hover {
+            background-color: rgb(245, 245, 245);
+            box-shadow:  
+            1px 1.8px 2.2px rgba(0, 0, 0, 0.005),
+            2px 2.7px 5.3px rgba(0, 0, 0, 0.011),
+            4px 4.5px 10px rgba(0, 0, 0, 0.017),
+            7px 7.3px 17.9px rgba(0, 0, 0, 0.027),
+            11px 11.8px 33.4px rgba(0, 0, 0, 0.035),
+            20px 20px 80px rgba(0, 0, 0, 0.05);
+        }
     }
 }
 

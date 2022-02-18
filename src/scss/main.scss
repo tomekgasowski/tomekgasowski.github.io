@@ -46,4 +46,14 @@
   line-height: 40px;
   padding: 4px 24px;
   font-weight: 600;
+  box-shadow:  
+  1px 1.8px 2.2px rgba(0, 0, 0, 0.011),
+  2px 2.7px 5.3px rgba(0, 0, 0, 0.022),
+  4px 4.5px 10px rgba(0, 0, 0, 0.035),
+  7px 7.3px 17.9px rgba(0, 0, 0, 0.047),
+  11px 11.8px 33.4px rgba(0, 0, 0, 0.055);
+  
+  &:hover {
+    background-color: rgb(44, 148, 247);
+  }
 }

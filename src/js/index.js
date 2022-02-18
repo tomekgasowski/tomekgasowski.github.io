@@ -41,12 +41,12 @@ fetch('https://api.github.com/users/tomekgasowski/repos')
                 </p>
                 <p class="left-column">demo:</p>
                 <p class="right-column">
-                  &lt <a href="${homepage}" class="project__link">see here</a> &gt
+                  &lt<a href="${homepage}" class="project__link">see here</a>&gt
                 </p>
 
                 <p class="left-column">github:</p>
                 <p class="right-column">
-                  &lt <a href="${html_url}" class="project__link">source code</a> &gt
+                  &lt<a href="${html_url}" class="project__link">source code</a>&gt
                 </p>
               </div>
             </article>
