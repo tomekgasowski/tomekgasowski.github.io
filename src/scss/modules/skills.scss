@@ -5,6 +5,9 @@
     &__heading {
         color: #FFF;
         margin: 48px auto 64px;
+        @media screen and (min-width: 1024px) {
+            margin: 64px auto 128px;
+        }
     }
     @media screen and (min-width: 1024px) {
         min-height: 100vh;   

@@ -9,13 +9,13 @@ import '../scss/main.scss';
 const projectGrid = document.querySelector('.my-projects__grid--js');
 
 fetch('https://api.github.com/users/tomekgasowski/repos')
-.then(resp => resp.json())
-.then(resp => {
+  .then(resp => resp.json())
+  .then(resp => {
     for (let repo of resp) {
-        const {name, description, html_url, homepage} = repo;
-        if (description) {
-            console.log(`${name}, ${description}, ${html_url}, ${homepage}`);
-            projectGrid.innerHTML += `<div class="project__container">
+      const { name, description, html_url, homepage } = repo;
+      if (description) {
+        console.log(`${name}, ${description}, ${html_url}, ${homepage}`);
+        projectGrid.innerHTML += `<div class="project__container">
             <div class="project__top-border">
               <div class="project__dot"></div>
               <div class="project__dot"></div>
@@ -41,19 +41,27 @@ fetch('https://api.github.com/users/tomekgasowski/repos')
                 </p>
                 <p class="left-column">demo:</p>
                 <p class="right-column">
-                  &lt<a href="${homepage}" class="project__link">see here</a>&gt
+                  &lt<a 
+                  target="_blank" 
+                  href="${homepage}" 
+                  rel="noopener noreferrer"
+                  class="project__link">see here</a>&gt
                 </p>
 
                 <p class="left-column">github:</p>
                 <p class="right-column">
-                  &lt<a href="${html_url}" class="project__link">source code</a>&gt
+                  &lt<a 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="${html_url}" 
+                  class="project__link">source code</a>&gt
                 </p>
               </div>
             </article>
           </div>`;
-        }
+      }
     }
-})
-.catch(error => {
+  })
+  .catch(error => {
     console.log("error");
-})
+  })
