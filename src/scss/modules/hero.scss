@@ -47,6 +47,7 @@
     }
     @media screen and (min-width: 1024px) {
       display: flex;
+      justify-content: space-between;
       background-color: #1070CA;   
       position: absolute;
       font-size: 32px;
